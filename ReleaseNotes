@@ -1,0 +1,3 @@
+Release x.x.x.x
+- added method ADao.isValid to indicate if the ADao still contains valid data
+  or if it has been unrgistered before
