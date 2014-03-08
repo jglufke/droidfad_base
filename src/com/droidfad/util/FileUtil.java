@@ -210,27 +210,6 @@ public class FileUtil {
 	}
 
 	/**
-	 * 
-	 * get the path relative to root
-	 * 
-	 * @param pRoot
-	 * @param pFile
-	 * @return
-	 * @throws IOException
-	 */
-	public static String getRelativePath(File pRoot, File pFile) throws IOException {
-		String lRelativePath = null;
-
-		if(pRoot != null && pFile != null) {
-			lRelativePath = pFile.getCanonicalPath();
-			lRelativePath = lRelativePath.substring(pRoot.getCanonicalPath().length(), lRelativePath.length());
-			lRelativePath = "." + lRelativePath;
-			lRelativePath = lRelativePath.replaceAll("\\\\", "/");
-		}
-
-		return lRelativePath;
-	}
-	/**
 	 * check if the canonical path of pFile1 equals the one
 	 * of pFile2
 	 * @param pFile1
